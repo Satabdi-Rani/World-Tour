@@ -72,3 +72,104 @@
        margin-top: 16px;
     }
 }
+
+/* -------------------------------------------- */
+/* -------------------------------------------- */
+.banner{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+}
+.banner_container{
+    background-image: url('/images/banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid transparent;
+    border-radius: 15px;
+}
+.banner_inner_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    background: transparent;
+    opacity: 3;
+}
+.img_div{
+    width: 900px;
+    margin-top: 10%;
+    margin-bottom: 15%;
+    text-align: center;
+}
+.img_div h1{
+    font-size: 60px;
+    color: white;
+    font-weight: bold;
+}
+.img_div h3{
+    font-size: 20px;
+    color: white;
+    padding: 20px 0px;
+}
+.findNow_section{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    background-color: rgba(128, 128, 128, 0.459);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 20px;
+}
+.direction_div{
+    width: 210px;
+    padding: 12px 16px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    justify-content: space-between;
+    color: gray;
+    font-size: 18px;
+}
+.find{
+    background-color: #FF5400;
+    color: white;
+    width: 200px;
+    padding: 12px 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    font-size: 18px;
+}
+.search{
+    margin-left: 30px;
+}
+/* media query */
+@media screen and (max-width: 600px) {
+    .img_div{
+        width: 400px;
+    }
+    .img_div h1{
+        font-size: 40px;
+    }
+    .img_div h3{
+        font-size: 16px;
+    }
+    .findNow_section{
+        flex-direction: column;
+        gap:20px;
+    }
+    .direction_div{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .find{
+        margin-left: auto;
+        margin-right: auto;
+        width: 210px;
+    }
+}
