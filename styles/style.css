@@ -215,10 +215,13 @@
     border-radius: 10px; 
 }
 .popularTours_image{
-
+   
 }
 /* Media query */
 @media screen and (max-width: 600px) {
+    .popularTours{
+        margin-top: 10%;
+    }
     .popularTours_container{
         flex-direction: column;
     }
@@ -231,6 +234,9 @@
         width: 450px;
         height: 300px;
         margin-top: 30px;
+    }
+    .popularTours_content h1{
+        font-size: 35px;
     }
 }
 
@@ -265,7 +271,7 @@
     margin-top: 3%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    justify-content: space-around;
+    justify-content: space-evenly;
     gap:20px;
 }
 .destination_gallery3{
@@ -292,43 +298,47 @@
     background-image: url('/images/destination1.png');
     background-size: cover;
      background-repeat: no-repeat;
-     width: 800px;
+     width: full;
 }
 .image2{
     background-image: url('/images/destination2.png');
     background-size: cover;
     background-repeat: no-repeat;    
-    width: 800px;
+    width: full;
 }
 .image3{
     background-image: url('/images/destination3.png');
     background-size: cover;
     background-repeat: no-repeat;   
-    width: 550px; 
+    width: 400px; 
+    /* padding: 0 250px; */
 }
 .image4{
     background-image: url('/images/destination4.png');
     background-size: cover;
     background-repeat: no-repeat;  
-    width: 700px;  
+    width: 600px; 
+    /* padding: 0 20px;  */
 }
 .image5{
     background-image: url('/images/destination5.png');
     background-size: cover;
     background-repeat: no-repeat; 
-    width: 400px;   
+    width: 338px;  
+    /* padding: 100px;  */
+    
 }
 .image6{
     background-image: url('/images/destination6.png');
     background-size: cover;
     background-repeat: no-repeat;   
-    width: 700px; 
+    width: 550px; 
 }
 .image7{
     background-image: url('/images/destination7.png');
     background-size: cover;
     background-repeat: no-repeat;    
-    width: 900px;
+    width: 800px;
 }
 @media screen and (max-width: 600px) { 
     .destination_gallery{
@@ -434,6 +444,15 @@
     font-size: 18px;
     width: 90%;
 }
+.icon1{
+    color: blue;
+}
+.icon2{
+    color: red;
+}
+.icon3{
+    color: green;
+}
 @media screen and (max-width:600px) {
     .card_container{
         grid-template-columns: repeat(1, 1fr);
@@ -450,13 +469,53 @@
     
 }
 
+/* ------------------------------------------ */
+/* ---------------FAQ------------- */
+.faq{
 
+}
+.faq_container{
+
+}
+.faq_content{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 4%;
+}
+.question_container{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+.question{
+    border: 1px solid rgb(192, 192, 238);
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 10px 10px lightblue;
+
+}
+.question h2{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.question p{
+    font-size: 16px;
+}
+@media screen and (max-width: 600px) {
+    .question_container{
+        flex-direction: column;
+    }
+    .faq_content{
+        font-size: 35px;
+    }
+}
 
 
 /* ----------------------------------------------- */
 /* ------------------Newsletter--------------- */
 .newsletter{
-    margin-top: 6%;
+    margin-top: 10%;
     margin-bottom: 10%;
 }
 .newsletter_container{
@@ -506,7 +565,33 @@
     border: 1px solid #FF5400;
     border-radius: 10px; 
 }
+.newsletter_image{
+    
+
+}
+.save{ 
+    position: relative;
+    bottom: 170px;
+    left: 70%;
+  width: 300px;
+  background-color: #FF5400;
+  transform: rotate(-35deg);
+  color: white;
+  padding: 20px 20px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  text-align: center;
+}
+.save h2{
+    font-size: 18px;    
+}
+.save h1{
+    font-size: 24px;
+}
 @media screen and (max-width:600px) {
+    .newsletter{
+        margin-top: 20%;
+    }
     .newsletter_container{
         flex-direction: column;
     }
@@ -517,6 +602,19 @@
     }
     .newsletter_form{
         padding-bottom: 30px;
+    }
+    .save{ 
+        position: relative;
+        bottom: 150px;
+        left: 50%;
+      width: 200px;
+      padding: 10px 10px;
+    }
+    .save h2{
+        font-size: 14px;
+    }
+    .save h1{
+        font-size: 18px;
     }
 }
 
@@ -595,5 +693,8 @@
     }
     .icon{
         font-size: 20px;
+    }
+    .rights{
+        padding-bottom: 70px;
     }
 }
