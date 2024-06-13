@@ -256,16 +256,29 @@
 }
 .destination_gallery{
     margin-top: 6%;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-around;
+    gap:20px;
+}
+.destination_gallery2{
+    margin-top: 3%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-around;
+    gap:20px;
+}
+.destination_gallery3{
+    margin-top: 3%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-around;
     gap:20px;
 }
 .image_design{
-    /* background-image: url('/images/destination1.png'); */
-    width: 400px;
     height: 300px;
     border: 1px solid transparent;
-    border-radius: 10px;
+    border-radius: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -277,15 +290,87 @@
 }
 .image1{
     background-image: url('/images/destination1.png');
-    
+    background-size: cover;
      background-repeat: no-repeat;
+     width: 800px;
 }
 .image2{
     background-image: url('/images/destination2.png');
-    /* width: 80%;  */
+    background-size: cover;
     background-repeat: no-repeat;    
+    width: 800px;
 }
-
+.image3{
+    background-image: url('/images/destination3.png');
+    background-size: cover;
+    background-repeat: no-repeat;   
+    width: 550px; 
+}
+.image4{
+    background-image: url('/images/destination4.png');
+    background-size: cover;
+    background-repeat: no-repeat;  
+    width: 700px;  
+}
+.image5{
+    background-image: url('/images/destination5.png');
+    background-size: cover;
+    background-repeat: no-repeat; 
+    width: 400px;   
+}
+.image6{
+    background-image: url('/images/destination6.png');
+    background-size: cover;
+    background-repeat: no-repeat;   
+    width: 700px; 
+}
+.image7{
+    background-image: url('/images/destination7.png');
+    background-size: cover;
+    background-repeat: no-repeat;    
+    width: 900px;
+}
+@media screen and (max-width: 600px) { 
+    .destination_gallery{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .destination_gallery2{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .destination_gallery3{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .image1{
+        width: 440px;
+    }
+    .image2{
+        width: 440px;
+    }
+    .image3{
+        width: 440px;
+    }
+    .image4{
+        width: 440px;
+    }
+    .image5{
+        width: 440px;
+    }
+    .image6{
+        width: 440px;
+    }
+    .image7{
+        width: 440px;
+        margin-bottom: 10%;
+    }
+    .destination_content h1{
+        font-size: 35px;
+    }
+    .destination_content p{
+        font-size: 15px;
+        width: 80%; 
+    }
+    
+}
 
 /* ---------------------------------------------- */
 /* -----------  Why choose us----------------- */
