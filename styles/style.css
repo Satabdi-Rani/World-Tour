@@ -233,3 +233,138 @@
         margin-top: 30px;
     }
 }
+
+/* ----------------------------------------------- */
+/* ----------------------------------------------- */
+.destination{
+    margin-top: 6%;
+}
+.destination_content{
+    text-align: center;
+}
+.destination_content h1{
+    font-size: 50px;
+    font-weight: bold;
+}
+.destination_content p{
+    font-size: 18px;
+    margin-top: 40px;
+    width: 70%;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+}
+.destination_gallery{
+    margin-top: 6%;
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+}
+.image_design{
+    /* background-image: url('/images/destination1.png'); */
+    width: 400px;
+    height: 300px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.caption{
+    color: white;
+    font-size: 40px;
+}
+.image1{
+    background-image: url('/images/destination1.png');
+    
+     background-repeat: no-repeat;
+}
+.image2{
+    background-image: url('/images/destination2.png');
+    /* width: 80%;  */
+    background-repeat: no-repeat;    
+}
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------- */
+/* ---------------------Footer----------------------- */
+.footer{
+     background-color: rgba(219, 215, 215, 0.481);
+     padding: 32px;
+     
+}
+.footer_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+}
+.footer_logo{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+    padding-top: 5%;
+}
+.footer_logo img{
+    width: 40px;
+    height: 40px;
+}
+.footer_world{
+    font-size: 28px;
+    margin-top: 5px;
+}
+.footer_tour{
+    color: #FF5400;
+    font-size: 28px;
+}
+.footer_social{
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+    padding: 10px 0;
+    font-size: 16px;
+}
+.footer_p{
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    width: 60%;
+}
+.footer_social li{
+    list-style-type: none;
+}
+.icon{
+    font-size: 30px;
+}
+.blue{
+    color: black;
+}
+.hr{
+    width: 80%;
+    border: 1px solid rgba(219, 216, 216, 0.663);
+}
+.rights{
+    font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+/* media query */
+@media screen and (max-width:600px) {
+    .footer_p{
+        width: 90%;
+        font-size: 16px;
+    }
+    .icon{
+        font-size: 20px;
+    }
+}
