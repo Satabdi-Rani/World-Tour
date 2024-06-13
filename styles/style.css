@@ -173,3 +173,63 @@
         width: 210px;
     }
 }
+
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+.section_container{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.popularTours{
+    margin-top: 6%;
+}
+.popularTours_container{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+}
+.popularTours_content{
+   width: 50%;
+}
+.popularTours_content h1{
+    font-size: 50px;
+    font-weight: bold;
+}
+.popularTours_content h3{
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.popularTours_content ul li{
+    padding: 8px 0;
+    font-size: 18px;
+}
+.btn_read{
+    padding: 15px 30px;
+    background-color: #FF5400;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    border: 1px solid #FF5400;
+    border-radius: 10px; 
+}
+.popularTours_image{
+
+}
+/* Media query */
+@media screen and (max-width: 600px) {
+    .popularTours_container{
+        flex-direction: column;
+    }
+    .popularTours_content{
+        width: 100%;
+        margin-left: 20px;
+        padding-right: 20px;
+    }
+    .popularTours_image img{
+        width: 450px;
+        height: 300px;
+        margin-top: 30px;
+    }
+}
